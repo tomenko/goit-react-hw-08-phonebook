@@ -1,0 +1,12 @@
+import PropTypes from 'prop-types';
+
+const ContactList = ({ children }) => (
+  <ul>{children}</ul>
+);
+
+ContactList.propTypes = {
+  children: PropTypes.node,
+};
+
+export default ContactList;
+
