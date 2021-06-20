@@ -4,6 +4,8 @@ export const getItems = state => state.contacts.items;
 
 export const getFilterValue = state => state.contacts.filter;
 
+export const getLoadingItems = state => state.contacts.loading;
+
 export const getFilteredContactList = createSelector(
   [getItems, getFilterValue],
   (allContacts, filter) => {

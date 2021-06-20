@@ -1,3 +1,27 @@
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
 .UserMenu {
   display: flex;
+  align-items: baseline;
+}
+
+.UserMenu ul {
+  display: flex;
+  margin-right: 10px;
+}
+
+.UserMenu li {
+  margin-right: 10px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  margin-right: 20px;
 }

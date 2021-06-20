@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import routes from '../../routes';
-import './navigation.css'
+import './UserMenu.css'
 
 const Navigation = () => {
     return (
@@ -19,19 +19,6 @@ const Navigation = () => {
                 Contacts</NavLink>
             </li>
 
-            <li> <NavLink
-                to={routes.login}
-                className="NavLink"
-                activeClassName="NavLink--active">
-                login</NavLink>
-            </li>
-
-            <li> <NavLink
-                to={routes.register}
-                className="NavLink"
-                activeClassName="NavLink--active">
-                Register</NavLink>
-            </li>   
         </ul>
     );   
 }

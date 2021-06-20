@@ -27,6 +27,7 @@ const mapDispatchFromProps = dispatch => ({
 
 export default connect(mapStateToProps, mapDispatchFromProps)(ContactItem);
 
+
 ContactItem.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
