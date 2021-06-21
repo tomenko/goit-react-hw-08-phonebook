@@ -9,7 +9,7 @@ const AuthNav = () => {
                 to={routes.login}
                 className="NavLink"
                 activeClassName="NavLink--active">
-                  <span className=".headerFont">
+                  <span >
                     Login
                   </span>
                 </NavLink>
@@ -19,7 +19,7 @@ const AuthNav = () => {
                 to={routes.register}
                 className="NavLink"
                 activeClassName="NavLink--active">
-                  <span className=".headerFont">
+                  <span >
                     Register
                   </span>
                 </NavLink>

@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import AppBar from './components/UserMenu';
 
 import { getCurrentUser } from './redux/auth/auth-operations';
-import { fetchContacts } from './redux/contacts/contacts-operations';
+/* import { fetchContacts } from './redux/contacts/contacts-operations'; */
 import { getItems, getLoadingItems } from './redux/contacts/contacts-selectors';
 
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
@@ -34,7 +34,7 @@ const RegisterView = lazy(() =>
 class App extends Component {
     componentDidMount() {
     this.props.onGetCurrentUser();
-    this.props.fetchItems();
+    /* this.props.fetchItems(); */
   }
 
   render() { 
@@ -74,7 +74,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchItems: () => dispatch(fetchContacts()),
+  /* fetchItems: () => dispatch(fetchContacts()), */
   onGetCurrentUser: () => dispatch(getCurrentUser()),
 });
 
