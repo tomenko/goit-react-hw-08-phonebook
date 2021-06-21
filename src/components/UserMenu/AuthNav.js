@@ -9,14 +9,20 @@ const AuthNav = () => {
                 to={routes.login}
                 className="NavLink"
                 activeClassName="NavLink--active">
-                Login</NavLink>
+                  <span className=".headerFont">
+                    Login
+                  </span>
+                </NavLink>
             </li>
 
             <li> <NavLink
                 to={routes.register}
                 className="NavLink"
                 activeClassName="NavLink--active">
-                Register</NavLink>
+                  <span className=".headerFont">
+                    Register
+                  </span>
+                </NavLink>
             </li>   
         </ul>
     );   

@@ -26,43 +26,42 @@ class RegisterView extends Component {
     const { name, email, password } = this.state;
 
     return (
-      <section >
-        <div>
-          <div>
-            <h1>Registration</h1>
-          </div>
-
+      <section className="sectionForm">
+        <div >
+          
           <form onSubmit={this.handleSubmit} className="Form">
-            <label className="Label">
-              Name
-              <input
-                type="text"
-                name="name"
-                value={name}
-                onChange={this.handleChange}
-              />
-            </label>
+            <div>
+              <h1>Registration</h1>
+            </div>
+            <label className="Label">Name</label>
+              
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={this.handleChange}
+            />
+            
 
-            <label className="Label">
-              Email
-              <input
-                type="email"
-                name="email"
-                value={email}
-                onChange={this.handleChange}
-              />
-            </label>
-
-            <label className="Label">
-              Password
-              <input
-                type="password"
-                name="password"
-                value={password}
-                onChange={this.handleChange}
-              />
-            </label>
-            <button type="submit">Submit</button>
+            <label className="Label">Email</label>
+              
+            <input
+              type="email"
+              name="email"
+              value={email}
+              onChange={this.handleChange}
+            />
+            
+            <label className="Label">Password</label>
+              
+            <input
+              type="password"
+              name="password"
+              value={password}
+              onChange={this.handleChange}
+            />
+            
+            <button type="submit" className="btn btnForm">Submit</button>
           </form>
         </div>
       </section>

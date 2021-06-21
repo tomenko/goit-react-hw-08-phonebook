@@ -1,20 +1,22 @@
 .header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
+  box-shadow: 0 5px 5px -5px #020200;
+  background-color: rgb(55, 163, 167);
+  border-radius: 10px;
+}
+
+.headerFont {
+  font-size: 20px;
 }
 
 .UserMenu {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
-.UserMenu ul {
-  display: flex;
-  margin-right: 10px;
-}
-
-.UserMenu li {
+.UserMenu img {
   margin-right: 10px;
 }
 
@@ -24,4 +26,5 @@
 
 .navigation li {
   margin-right: 20px;
+  padding-left: 20px;
 }

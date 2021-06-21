@@ -12,6 +12,8 @@ import { getItems, getLoadingItems } from './redux/contacts/contacts-selectors';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import PublicRoute from './components//PublicRoute/PublicRoute';
 
+import './app.css'
+
 const HomeView = lazy(() =>
   import('./views/HomeView' /* webpackChunkName: "home-view" */)
 );
@@ -37,7 +39,7 @@ class App extends Component {
 
   render() { 
     return (
-      <div  className="App">
+      <div  className="app">
         <AppBar />
         <Suspense fallback={<div>Loading...</div>}>
           <Switch>

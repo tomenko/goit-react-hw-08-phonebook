@@ -8,7 +8,7 @@ const ContactItem = ({ onDelete, contactsItems }) => (
       return (
         <li key={id}>
           <p>{`${name}: ${number}`}</p>
-          <button type="button" onClick={() => onDelete(id)}>
+          <button type="button" onClick={() => onDelete(id)} className="btn">
             Delete
           </button>
         </li>

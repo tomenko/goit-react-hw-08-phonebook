@@ -7,9 +7,9 @@ import noAvatar from '../../image/icons-user-no-avatar.png';
 
 const UserMenu = ({ email, onLogout, avatar }) => (
     <div className="UserMenu">        
-        <img src={avatar} alt="" width="40" />   
+        <img src={avatar} alt="" width="30" />   
         <span>{email}</span>
-        <button type="button" onClick={onLogout}>Sign out</button>
+        <button type="button" onClick={onLogout} className="btn">Sign out</button>
     </div>
 )
 

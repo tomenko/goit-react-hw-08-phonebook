@@ -47,9 +47,10 @@ class ContactForm extends Component {
     const { name, number } = this.state;
       
     return (
-      <form onSubmit = {this.handleSubmit}>
-        <label htmlFor={this.loginInputNameId}>
-          Name
+      <section className="sectionFormContacts">
+        <form onSubmit = {this.handleSubmit}>
+          <label htmlFor={this.loginInputNameId}>Name</label>
+          
           <input
             type="text"
             name="name"
@@ -61,10 +62,10 @@ class ContactForm extends Component {
             onChange = {this.hendleInputChange}
                 
           />
-        </label>
+        
 
-        <label htmlFor={this.loginInputNamberId}>
-          Number
+          <label htmlFor={this.loginInputNamberId}>Number</label>
+          
           <input
             type="tel"
             name="number"
@@ -75,10 +76,12 @@ class ContactForm extends Component {
             value={number}
             onChange = {this.hendleInputChange}
           />
-        </label>
+        
                   
-        <button type="submit">Add contact</button>
-      </form>
+          <button type="submit" className="btn btnForm">Add contact</button>
+        </form>
+      </section>
+
     )
   }
 }

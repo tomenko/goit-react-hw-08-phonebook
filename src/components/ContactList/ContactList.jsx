@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const ContactList = ({ children }) => (
-  <ul>{children}</ul>
+  <ul className="contactList">{children}</ul>
 );
 
 ContactList.propTypes = {

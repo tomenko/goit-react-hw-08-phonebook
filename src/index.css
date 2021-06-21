@@ -1,18 +1,23 @@
 body {
-  max-width: 1200px;
   margin: 0, auto;
-  padding: 20px;
+  padding: 0 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  background-color: rgb(15, 135, 139);
 }
 
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -25,23 +30,22 @@ img {
   display: block;
 }
 
+input {
+  background-color: rgb(171, 230, 222);
+  border-radius: 8px;
+  padding: 3px;
+  font-size: 18px;
+}
+
 button {
   width: 100px;
   height: 30px;
   margin-left: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
+  font-size: 16px;
 }
 
 label {
   margin: 10px 0 10px 0;
-}
-
-input {
-  margin-left: 10px;
 }
 
 li {
@@ -54,5 +58,79 @@ li {
 }
 
 .NavLink--active {
-  color: crimson;
+  color: rgb(143, 233, 25);
+}
+
+.HomeView {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  z-index: -1;
+}
+
+.HomeViewText {
+  padding-top: 45px;
+  text-align: center;
+}
+
+.HomeViewImgBlock {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0 0 -125px;
+}
+
+.HomeViewImgBlock img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+.sectionForm {
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFormContacts {
+  display: flex;
+  justify-content: left;
+}
+
+form {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+}
+
+.btnForm {
+  margin: 20px 0 0 0;
+}
+
+.btn {
+  background-color: rgb(143, 233, 25);
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.contactList {
+  padding: 20px;
+}
+
+.filter {
+  display: flex;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.filter input {
+  margin-left: 20px;
 }

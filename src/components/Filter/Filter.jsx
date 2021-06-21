@@ -2,9 +2,12 @@ import { connect } from 'react-redux';
 import { changeFilter, getFilterValue } from '../../redux/contacts';
 
 const Filter = ({ value, onChange }) => (
-  <label>
+  <label className="filter">
     Find contacts by name
-    <input type="text" value={value} onChange={onChange}></input>
+    <div >
+      <input type="text" value={value} onChange={onChange}></input>
+    </div>
+    
   </label>
 );
 

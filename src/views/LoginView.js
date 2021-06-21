@@ -23,34 +23,32 @@ class loginView extends Component {
     const { email, password } = this.state;
 
     return (
-      <section >
+      <section className="sectionForm">
         <div>
-          <div>
-            <h1>Login</h1>
-          </div>
+
 
           <form onSubmit={this.handleSubmit} className="Form">
-            <label className="Label">
-              Email
-              <input
-                type="email"
-                name="email"
-                value={email}
-                onChange={this.handleChange}
-              />
-            </label>
-
-            <label className="Label">
-              Password
-              <input
-                type="password"
-                name="password"
-                value={password}
-                onChange={this.handleChange}
-                autoComplete="off"
-              />
-            </label>
-            <button type="submit">Log in</button>
+            <div>
+              <h1>Login</h1>
+            </div>
+            <label className="Label">Email</label>
+            <input
+              type="email"
+              name="email"
+              value={email}
+              onChange={this.handleChange}
+            />
+            
+            <label className="Label">Password</label>
+            <input
+              type="password"
+              name="password"
+              value={password}
+              onChange={this.handleChange}
+              autoComplete="off"
+            />
+            
+            <button type="submit" className="btn btnForm">Log in</button>
           </form>
         </div>
       </section>
