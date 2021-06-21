@@ -8,12 +8,10 @@ export const getLoadingItems = state => state.contacts.loading;
 
 export const getFilteredContactList = createSelector(
   [getItems, getFilterValue],
-  (allContacts, filter) => {
-    const regExp = new RegExp(filter, 'gi');
-
-    if (filter) {
-    return allContacts.filter(contact => regExp.test(contact.name));
-    }
-    return allContacts;
+  (contacts, filter) => {
+    const normalizedFilter = filter.toLowerCase();
+    return contacts
+      .filter(({ name }) => name.toLowerCase().includes(normalizedFilter))
+      .sort((a, b) => a.name.localeCompare(b.name));
   },
 );
