@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
-import getError from '../redux/auth';
 import { signup } from '../redux/auth';
 
 
@@ -9,7 +8,6 @@ class RegisterView extends Component {
     name: '',
     email: '',
     password: '',
-    error: true,
   };
 
   handleChange = ({ target: { name, value } }) => {
@@ -20,7 +18,6 @@ class RegisterView extends Component {
     e.preventDefault();
 
     this.props.onSignup(this.state);
-    /* this.props.error(this.state); */
 
     this.setState({ name: '', email: '', password: '' });
     
@@ -32,7 +29,7 @@ class RegisterView extends Component {
     return (
       <section className="sectionForm">
         <div >
-          {/* {this.props.error.lenght !== 0 ? (alert("не верные данные")):(<span>1</span>)} */}
+          
             <form onSubmit={this.handleSubmit} className="Form">
               <div>
                 <h1>Registration</h1>
@@ -78,13 +75,10 @@ class RegisterView extends Component {
 }
 
 
-/* const mapStateToProps = state => ({
-  error: getError(state)
-}); */
+
 
 const mapDispatchtoProps = {
   onSignup: signup,
 };
 
-/* export default connect(mapStateToProps, mapDispatchtoProps)(RegisterView); */
 export default connect(null, mapDispatchtoProps)(RegisterView);
